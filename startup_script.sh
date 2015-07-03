@@ -24,7 +24,7 @@ status(){
         then
                 echo "$DAEMON running with $pid"
         else
-                echo "$DAEMON is now not stopped/not running"
+                echo "$DAEMON is now stopped/not running"
         fi
 }
 
