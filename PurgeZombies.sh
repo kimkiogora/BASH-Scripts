@@ -1,5 +1,5 @@
 zombie_suspect='some-script.php'
-count=`ps aux | grep -c $zombie_suspect`
+count=`ps aux | grep -c $zombie_suspect|grep -v 'grep'`
 
 echo "$count process(es) found"
 
@@ -16,7 +16,7 @@ done
 echo "Revalidating ..."
 sleep 1
 #recap
-count=`ps aux | grep -c $zombie_suspect`
+count=`ps aux | grep -c $zombie_suspect|grep -v 'grep'`
 if [ $count -eq 0 ];then
 echo "Purge completed $count process(es) found"
 else
