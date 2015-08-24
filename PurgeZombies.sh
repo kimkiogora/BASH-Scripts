@@ -1,3 +1,4 @@
+#!/bin/bash
 zombie_suspect='some-script.php'
 count=`ps aux | grep -c $zombie_suspect|grep -v 'grep'`
 
