@@ -16,7 +16,7 @@ done
 echo "Revalidating ..."
 sleep 1
 #recap
-count=`ps aux | grep -c c2b-poller.php`
+count=`ps aux | grep -c $zombie_suspect`
 if [ $count -eq 0 ];then
 echo "Purge completed $count process(es) found"
 else
