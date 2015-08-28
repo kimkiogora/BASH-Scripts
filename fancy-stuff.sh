@@ -15,3 +15,6 @@ ls -l | egrep -v ‘^d’
 
 #Maintanacnce
 ls -l | egrep -v '^d' | grep -v '.txt'
+
+#Remove file starting with `
+rm -rf \`*
