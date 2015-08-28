@@ -12,3 +12,6 @@ ls -l | egrep '^d'
 
 #List files only
 ls -l | egrep -v ‘^d’
+
+#Maintanacnce
+ls -l | egrep -v '^d' | grep -v '.txt'
