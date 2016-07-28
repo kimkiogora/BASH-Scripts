@@ -1,3 +1,6 @@
+#Get IP in ubuntu
+ifconfig | grep 'Bcast' | grep 'inet addr' | awk '{print $2}'| sed -e 's/addr://g'
+
 #List files greater than specific size
 ls -l | awk '{if ($5 > $your_size_here) print $9}'
 
