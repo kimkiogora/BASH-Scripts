@@ -1,3 +1,6 @@
+#Show threads per core
+lscpu | grep Thread | grep -i core | awk '{print $4}'
+
 #Get IP in ubuntu
 ifconfig | grep 'Bcast' | grep 'inet addr' | awk '{print $2}'| sed -e 's/addr://g'
 
