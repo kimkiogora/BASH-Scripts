@@ -1,3 +1,6 @@
+#Whats eating my memory
+ps aux  | awk '{print $6/1024 " MB\t\t" $11}'  | sort -n
+
 #Show threads per core
 lscpu | grep Thread | grep -i core | awk '{print $4}'
 
